@@ -45,6 +45,17 @@
 
     <div>
         <p>
+            
+            <?php
+
+            if(isset($_GET['login']))
+            {
+                echo('Krivo korisnicko ime ili lozinka');
+
+            }
+
+            ?>
+
         <form action="login_check.php" method="post">
             Username:<br>
             <input type="text" name="username"><br>
